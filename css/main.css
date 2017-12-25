@@ -1,4 +1,5 @@
 * {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -19,7 +20,6 @@
     color: white;
 }
 
-
 #bannerImg .navbar-default .navbar-nav>li>a.secondLink,
 #bannerImg .navbar-default .navbar-nav>li>a.firstLink,
 .links .mainFirstLink,
@@ -36,7 +36,9 @@
     margin-right: 40px;
 }
 
+
 /* Adapted from a post on stackoverflow */
+
 #bannerImg .navbar-default .navbar-nav>li>a.secondLink:after {
     content: '';
     width: 50%;
@@ -46,6 +48,7 @@
     border-width: 0 0 1px;
     border-style: solid;
 }
+
 .links .mainSecondLink:after {
     content: '';
     width: 50%;
@@ -65,6 +68,7 @@
     border-width: 0 0 1px;
     border-style: solid;
 }
+
 .links .mainFirstLink:after {
     content: '';
     width: 100%;
@@ -74,6 +78,8 @@
     border-width: 0 0 1px;
     border-style: solid;
 }
+
+
 /* End Adapted from a post on stackoverflow  */
 
 #bannerImg .navbar-default .navbar-brand,
@@ -171,7 +177,8 @@ footer {
     color: rgb(176, 180, 190);
 }
 
-.mountains ul, .links ul  {
+.mountains ul,
+.links ul {
     list-style-type: none;
     margin-bottom: 0px;
     padding-left: 0px;
@@ -197,7 +204,7 @@ a.mainSecondLink {
 }
 
 .schedule {
-    background: rgba(255,255,255,0.7);
+    background: rgba(255, 255, 255, 0.7);
     width: 350px;
     padding: 25px 40px;
     line-height: 1;
@@ -218,14 +225,14 @@ a.mainSecondLink {
 
 footer .copyright {
     font-size: 12px;
-    color: rgb(99,118,157);
+    color: rgb(99, 118, 157);
     margin-top: 10px;
 }
 
 footer img,
 .navbar-header a img,
 #midNav img {
-    width: 40px; 
+    width: 40px;
     height: 40px;
     margin-left: 20px;
 }
@@ -233,11 +240,35 @@ footer img,
 .footerTitle {
     font-size: 21px;
     line-height: 1;
-    color: rgb(99,118,157);
+    color: rgb(99, 118, 157);
 }
 
 footer .container {
     padding: 20px 0px 15px;
+}
+
+.slick-slide {
+    width: 178px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.slick-dots li.slick-active button:before {
+    color: white;
+}
+
+#containerCarousel {
+    padding: 25px 340px 5px;
+    background: rgba(65, 79, 107, 0.7);
+    margin-top: 735px;
+}
+
+.carousel {
+    padding: 5px;
+}
+
+.carousel img {
+    width: 100%;
 }
 
 @media (min-width: 1200px) {
