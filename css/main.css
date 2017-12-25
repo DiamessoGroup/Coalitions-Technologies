@@ -1,0 +1,247 @@
+* {
+    box-sizing: border-box;
+}
+
+#bannerImg {
+    background-image: url('../img/mountain-1.jpg');
+    min-height: 824px;
+    background-position: center;
+    background-size: cover;
+}
+
+#bannerImg .navbar-default {
+    background: transparent;
+    border: none;
+}
+
+#bannerImg .navbar-default .navbar-nav>li>a,
+#bannerImg .navbar-default .navbar-brand {
+    color: white;
+}
+
+
+#bannerImg .navbar-default .navbar-nav>li>a.secondLink,
+#bannerImg .navbar-default .navbar-nav>li>a.firstLink,
+.links .mainFirstLink,
+.links .mainSecondLink {
+    font-size: 12px;
+    text-decoration: none;
+    position: relative;
+}
+
+#bannerImg .navbar-default .navbar-nav>li>a.firstLink,
+.links .mainFirstLink {
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: 40px;
+}
+
+/* Adapted from a post on stackoverflow */
+#bannerImg .navbar-default .navbar-nav>li>a.secondLink:after {
+    content: '';
+    width: 50%;
+    position: absolute;
+    left: 0;
+    bottom: 15px;
+    border-width: 0 0 1px;
+    border-style: solid;
+}
+.links .mainSecondLink:after {
+    content: '';
+    width: 50%;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    border-width: 0 0 1px;
+    border-style: solid;
+}
+
+#bannerImg .navbar-default .navbar-nav>li>a.firstLink:after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 15px;
+    border-width: 0 0 1px;
+    border-style: solid;
+}
+.links .mainFirstLink:after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    border-width: 0 0 1px;
+    border-style: solid;
+}
+/* End Adapted from a post on stackoverflow  */
+
+#bannerImg .navbar-default .navbar-brand,
+#midNav .navbar-default .navbar-brand {
+    font-size: 22.9px;
+}
+
+#bannerImg h1 {
+    height: 824px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    color: rgb(77, 77, 77);
+    font-size: 115px;
+    margin-top: 250px;
+}
+
+#bannerImg h1 span {
+    color: rgb(65, 79, 107);
+}
+
+#midNav .navbar-default {
+    background: white;
+    border: none;
+}
+
+#midNav .navbar-default .navbar-nav>li>a {
+    color: rgb(65, 79, 107);
+}
+
+#secondBgImg {
+    background-image: url('../img/mountain-2.jpeg');
+    min-height: 900px;
+    background-position: center;
+    background-size: cover;
+}
+
+#secondBgImg h1,
+#secondBgImg span,
+.climb span,
+.climb h1,
+.mountainList .active {
+    color: rgb(65, 79, 107);
+}
+
+#secondBgImg .history {
+    position: relative;
+    padding-top: 80px;
+}
+
+.climb {
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 25px;
+}
+
+#secondBgImg h1 {
+    font-size: 31px;
+    position: absolute;
+    top: 150px;
+    left: 135px;
+    z-index: 2;
+}
+
+.climb h1 {
+    font-size: 31px;
+    position: absolute;
+    top: 120px;
+    left: 188.5px;
+    z-index: 2;
+}
+
+.climb p {
+    position: absolute;
+    top: 120px;
+    left: 300px;
+}
+
+#secondBgImg span,
+.climb span {
+    font-size: 135.6px;
+}
+
+#secondBgImg p {
+    padding-left: 72px;
+}
+
+.mountains,
+footer {
+    background: rgb(65, 79, 107);
+}
+
+.mountains {
+    font-size: 24px;
+    color: rgb(176, 180, 190);
+}
+
+.mountains ul, .links ul  {
+    list-style-type: none;
+    margin-bottom: 0px;
+    padding-left: 0px;
+}
+
+.mountains li {
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.links li {
+    display: inline-block;
+}
+
+a.mainSecondLink {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.mountainList .active {
+    background: rgb(175, 179, 189);
+    text-decoration: underline;
+}
+
+.schedule {
+    background: rgba(255,255,255,0.7);
+    width: 350px;
+    padding: 25px 40px;
+    line-height: 1;
+}
+
+.schedule h1 {
+    margin-top: 0px;
+}
+
+#lastMountain {
+    background-image: url('../img/mountain-3.jpeg');
+    min-height: 550px;
+    background-position: center;
+    background-size: cover;
+    padding-top: 100px;
+    padding-left: 350px;
+}
+
+footer .copyright {
+    font-size: 12px;
+    color: rgb(99,118,157);
+    margin-top: 10px;
+}
+
+footer img,
+.navbar-header a img,
+#midNav img {
+    width: 40px; 
+    height: 40px;
+    margin-left: 20px;
+}
+
+.footerTitle {
+    font-size: 21px;
+    line-height: 1;
+    color: rgb(99,118,157);
+}
+
+footer .container {
+    padding: 20px 0px 15px;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 959px;
+    }
+}
