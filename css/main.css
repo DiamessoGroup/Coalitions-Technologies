@@ -258,13 +258,17 @@ footer .container {
 }
 
 #containerCarousel {
-    padding: 25px 340px 5px;
+    padding-top: 25px;
+    padding-bottom: 5px;
     background: rgba(65, 79, 107, 0.7);
     margin-top: 735px;
 }
 
 .carousel {
     padding: 5px;
+    width: 53%;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .carousel img {
@@ -274,5 +278,16 @@ footer .container {
 @media (min-width: 1200px) {
     .container {
         width: 959px;
+    }
+}
+
+@media (max-width: 768px) {
+    #bannerImg h1 {
+        font-size: 70px;
+    }
+}
+@media (max-width: 425px) {
+    #bannerImg h1 {
+        font-size: 35px;
     }
 }
